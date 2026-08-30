@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip install --no-cache-dir \
     yt-dlp \
+    bgutil-ytdlp-pot-provider \
     flask \
     gunicorn
 
