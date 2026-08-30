@@ -68,6 +68,8 @@ def download():
 
     "-o",
     "-",
+        
+    url
     ]
 
     process = subprocess.Popen(
