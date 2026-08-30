@@ -66,7 +66,7 @@ def download():
     process = subprocess.Popen(
         command,
         stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
+        stderr=None,
         bufsize=0
     )
 
