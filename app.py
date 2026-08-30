@@ -56,6 +56,8 @@ def download():
     "--no-part",
     "--extractor-args",
     "youtube:player_client=mweb",
+    "--remote-components",
+    "ejs:github",
     "--extractor-args",
     "youtubepot-bgutilhttp:base_url=https://cobalt-pot-provider.onrender.com",
     "-f",
