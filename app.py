@@ -61,10 +61,13 @@ def download():
     "--extractor-args",
     "youtubepot-bgutilhttp:base_url=https://cobalt-pot-provider.onrender.com",
     "-f",
-        "best[ext=mp4]/best",
-        "-o",
-        "-",
-        url
+    "bestvideo[height<=1080]+bestaudio/best[height<=1080]",
+
+    "--merge-output-format",
+    "mp4",
+
+    "-o",
+    "-",
     ]
 
     process = subprocess.Popen(
