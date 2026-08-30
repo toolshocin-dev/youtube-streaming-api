@@ -51,10 +51,12 @@ def download():
         return jsonify({"error": "Missing url"}), 400
 
     command = [
-        "yt-dlp",
-        "--no-playlist",
-        "--no-part",
-        "-f",
+    "yt-dlp",
+    "--no-playlist",
+    "--no-part",
+    "--extractor-args",
+    "youtube:player_client=mweb",
+    "-f",
         "best[ext=mp4]/best",
         "-o",
         "-",
