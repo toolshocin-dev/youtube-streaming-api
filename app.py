@@ -114,13 +114,13 @@ def download():
     ]
 
     try:
-    result = subprocess.run(
-        command,
-        stdout=None,
-        stderr=None,
-        text=True,
-        timeout=540
-    )
+        result = subprocess.run(
+            command,
+            stdout=None,
+            stderr=None,
+            text=True,
+            timeout=540
+        )
 
         if result.returncode != 0:
             shutil.rmtree(
