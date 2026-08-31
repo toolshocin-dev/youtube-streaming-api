@@ -129,7 +129,7 @@ def download():
             )
 
             return jsonify({
-                "error": result.stderr[-3000:]
+                "error": "yt-dlp download failed. Check Render logs for details."
             }), 500
 
         files = os.listdir(temp_dir)
