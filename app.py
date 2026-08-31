@@ -113,7 +113,7 @@ def download():
         url
     ]
 
-   try:
+    try:
     result = subprocess.run(
         command,
         stdout=None,
